@@ -1,0 +1,10 @@
+init:
+  contract.storage[msg.sender] = 10000
+code:
+  to = msg.data[0]
+  from = msg.sender
+  value = msg.data[1]
+  if contract.storage[from] >= value:
+    contract.storage[from] = contract.storage[from] - value
+    contract.storage[to] = contract.storage[to] + value
+  

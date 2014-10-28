@@ -1,0 +1,32 @@
+<html>
+<head>
+  <!-- updated 25/10/14 -->
+  <title>My Token</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+  <script src="mytoken.js"></script>
+</head>
+
+
+<body>
+
+  <div class="header">
+    <h3 class="text-muted">My Token</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Balance: <strong id="balance"></strong></h1>
+    <br>
+
+    <div>
+      <div class="form-group">
+        <input id="receiverAddress" class="form-control" type="text" placeholder="Receiver address"></input><br>
+        <input id="amount" class="form-control" type="text" placeholder="Amount"></input><br>
+      </div>
+      <button class="btn btn-default" onclick="createTransaction();">Send some tokens!</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
